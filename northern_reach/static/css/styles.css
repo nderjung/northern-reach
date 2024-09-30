@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.control-panel {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.control-panel label {
+    margin-right: 10px;
+}
+
+.control-panel input[type="date"] {
+    margin: 0 10px;
+}
+
+.main-container {
+    display: flex;
+    height: calc(100vh - 250px); /* Adjust based on your header and control panel height */
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    margin-right: 20px;
+}
+
+.sidebar h2 {
+    padding: 20px;
+    margin: 0;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.interaction-log {
+    padding: 20px;
+}
+
+.interaction-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.interaction-item:last-child {
+    border-bottom: none;
+}
+
+.interaction-item p {
+    margin: 5px 0;
+}
+
+#map-container {
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.leaflet-container {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.leaflet-popup-content-wrapper {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.leaflet-popup-content {
+    margin: 0;
+}
+
+.leaflet-popup-content b {
+    color: #0066cc;
+}
