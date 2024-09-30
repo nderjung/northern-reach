@@ -28,7 +28,12 @@ h1 {
 
 .main-container {
     display: flex;
-    height: calc(100vh - 250px); /* Adjust based on your header and control panel height */
+    height: calc(100vh - (var(--top-bar-height) + var(--control-panel-height) + var(--content-padding) + var(--content-bottom-padding)));
+}
+
+.content {
+    padding: 20px;
+    padding-bottom: 40px; /* Add extra padding at the bottom */
 }
 
 .sidebar {
@@ -88,4 +93,11 @@ h1 {
 
 .leaflet-popup-content b {
     color: #0066cc;
+}
+
+:root {
+    --top-bar-height: 60px;
+    --control-panel-height: 230px;
+    --content-padding: 40px;
+    --content-bottom-padding: 20px;
 }
