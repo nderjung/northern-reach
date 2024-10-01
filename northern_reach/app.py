@@ -14,7 +14,7 @@ class CustomJSONEncoder(json.JSONEncoder):
 
 # Load your data
 # Replace this with your actual data loading method
-df = pd.read_csv('northern_reach/uk_interactions.csv')
+df = pd.read_csv('/app/uk_interactions.csv')
 
 @app.route("/")
 def map_view():
@@ -51,4 +51,4 @@ def map_view():
     return render_template('app.html', interactions=interactions, marker_data=marker_data_json)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=8080)
